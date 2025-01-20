@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-redhat-bold: "";
+  --font-redhat-medium: "";
+  --font-redhat-regular: "";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "RedHatRegular";
+  src: url("/fonts/redhatreg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RedHatMedium";
+  src: url("/fonts/redhatmed.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RedHatBold";
+  src: url("/fonts/redhatbold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-redhat-regular {
+  font-family: var(--font-redhat-regular);
+}
+
+.font-redhat-medium {
+  font-family: var(--font-redhat-medium);
+}
+
+.font-redhat-bold {
+  font-family: var(--font-redhat-bold);
+}
