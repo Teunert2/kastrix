@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kastrix - Bijkeukenkasten op Maat
 
-## Getting Started
+Live website gemaakt door [Jouw Naam/Bedrijf]
 
-First, run the development server:
+## Over Kastrix
+Kastrix is een specialist in maatwerk bijkeukenkasten, opgericht door Job en Arjan. Met passie voor interieurbouw maken wij hoogwaardige kasten die perfect aansluiten bij de wensen van onze klanten. Onze persoonlijke service, waarbij we aan huis komen voor advies en montage, onderscheidt ons in de markt.
 
+## Kernproducten & Diensten
+
+### 🏠 Bijkeukenkasten
+- Maatwerk oplossingen
+- Optimaal ruimtegebruik
+- Hoogwaardige materialen
+- Professionele montage
+
+### 🛠️ Service
+- Gratis advies aan huis
+- Eigen werkplaats
+- Vakkundige montage
+- Uitgebreide garantie
+
+### 🎨 Design
+- Moderne designs
+- Persoonlijke stijl
+- Functioneel
+- Duurzame materialen
+
+## Technische Specificaties
+
+### Gebouwd met
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+
+### Vereisten
+- Node.js (v18 of hoger)
+- npm of yarn
+- Git
+
+## Lokale Ontwikkeling
+
+1. Clone de repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/[username]/kastrix.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Ga naar de project directory:
+```bash
+cd kastrix
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Installeer dependencies:
+```bash
+npm install
+# of
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start de development server:
+```bash
+npm run dev
+# of
+yarn dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in je browser
 
-To learn more about Next.js, take a look at the following resources:
+## Features
+- Responsive design
+- Moderne UI/UX
+- Geoptimaliseerd voor SEO
+- Snelle laadtijden
+- Contactformulier integratie
+- Afspraken planningssysteem
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
+- Website: [www.kastrix.nl](https://www.kastrix.nl)
+- Email: info@kastrix.nl
+- Adres: Stationsstraat 110A, 3881 AG Putten
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licentie
+Copyright © 2024 Kastrix. Alle rechten voorbehouden.
