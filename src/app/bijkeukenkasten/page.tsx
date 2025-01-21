@@ -5,17 +5,26 @@ export default function Bijkeukenkasten() {
   return (
     <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
       {/* Top bar */}
-      <div className="h-[27px] w-full bg-[#F5F5F5]"></div>
+      <div className="h-[27px] w-full bg-[#F5F5F5] flex justify-end items-center pr-[257px]">
+        <Image
+          src="/images/trustpilot.png"
+          alt="Top bar image"
+          width={235}
+          height={20}
+        />
+      </div>
+      
       
       {/* Navbar */}
-      <div className="mx-[257px]">
+      {/* Navbar */}
+      <div className="mx-[200px]">
         <nav className="flex justify-between items-center py-4 bg-white">
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/images/logo.png"
               alt="Kastrix logo"
-              width={120}
-              height={40}
+              width={150}
+              height={60}
             />
           </Link>
           <div className="flex items-center gap-[180px]">
@@ -118,10 +127,10 @@ export default function Bijkeukenkasten() {
             <div>
               <Link href="/">
                 <Image
-                  src="/logo.svg"
+                  src="/images/logo.png"
                   alt="Kastrix logo"
-                  width={120}
-                  height={40}
+                  width={150}
+                  height={60}
                 />
               </Link>
             </div>

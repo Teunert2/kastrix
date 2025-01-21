@@ -5,17 +5,25 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Top bar */}
-      <div className="h-[27px] w-full bg-[#F5F5F5]"></div>
+      <div className="h-[27px] w-full bg-[#F5F5F5] flex justify-end items-center pr-[257px]">
+        <Image
+          src="/images/trustpilot.png"
+          alt="Top bar image"
+          width={235}
+          height={20}
+        />
+      </div>
+      
       
       {/* Navbar */}
-      <div className="mx-[160px]">
+      <div className="mx-[200px]">
         <nav className="flex justify-between items-center py-4 bg-white">
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/images/logo.png"
               alt="Kastrix logo"
-              width={120}
-              height={40}
+              width={150}
+              height={60}
             />
           </Link>
           <div className="flex items-center gap-[180px]">
@@ -162,9 +170,9 @@ export default function Home() {
             </div>
 
             {/* Image and Text */}
-            <div className="relative h-[400px] w-full mb-8">
+            <div className="relative h-[550px] w-full mb-8">
               <Image
-                src="/images/werkwijze.jpg"
+                src="/images/genieten.png"
                 alt="Man in laundry room"
                 fill
                 className="object-cover rounded-lg"
@@ -192,10 +200,10 @@ export default function Home() {
           <div className="flex justify-between">
             <div>
               <Image
-                src="/logo.svg"
+                src="/images/logo.png"
                 alt="Kastrix logo"
-                width={120}
-                height={40}
+                width={150}
+                height={60}
               />
             </div>
             

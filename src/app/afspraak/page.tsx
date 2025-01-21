@@ -31,17 +31,24 @@ export default function Afspraak() {
   return (
     <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
       {/* Top bar */}
-      <div className="h-[27px] w-full bg-[#F5F5F5]"></div>
+      <div className="h-[27px] w-full bg-[#F5F5F5] flex justify-end items-center pr-[257px]">
+        <Image
+          src="/images/trustpilot.png"
+          alt="Top bar image"
+          width={235}
+          height={20}
+        />
+      </div>
       
       {/* Navbar */}
-      <div className="mx-[257px]">
+      <div className="mx-[200px]">
         <nav className="flex justify-between items-center py-4 bg-white">
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/images/logo.png"
               alt="Kastrix logo"
-              width={120}
-              height={40}
+              width={150}
+              height={60}
             />
           </Link>
           <div className="flex items-center gap-[180px]">
@@ -56,7 +63,7 @@ export default function Afspraak() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative h-[200px] w-full bg-[#F5F5F5] flex items-center justify-center">
+      <div className="relative h-[300px] w-full bg-[#F5F5F5] flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-[#2E4D55] text-[32px] font-redhat-bold mb-4">
             "Wij komen graag bij u langs!"
@@ -68,11 +75,11 @@ export default function Afspraak() {
       </div>
 
       {/* Main Content */}
-      <div className="mx-[257px] my-16">
+      <div className="mx-[257px] py-[50px] -mt-20">
         {/* Featured Image */}
-        <div className="relative h-[300px] w-full rounded-lg overflow-hidden mb-12">
+        <div className="relative h-[500px] w-full mb-12 rounded-lg overflow-hidden z-10 shadow-lg">
           <Image
-            src="/images/team.jpg"
+            src="/images/overons.png"
             alt="Kastrix team"
             fill
             className="object-cover"
@@ -221,14 +228,12 @@ export default function Afspraak() {
         <div className="mx-[160px]">
           <div className="flex justify-between">
             <div>
-              <Link href="/">
-                <Image
-                  src="/logo.svg"
-                  alt="Kastrix logo"
-                  width={120}
-                  height={40}
-                />
-              </Link>
+            <Image
+                src="/images/logo.png"
+                alt="Kastrix logo"
+                width={150}
+                height={60}
+              />
             </div>
             
             <div className="grid grid-cols-4 gap-20">
