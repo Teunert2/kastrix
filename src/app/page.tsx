@@ -71,7 +71,7 @@ export default function Home() {
               />
               <div className="absolute bottom-0 p-4 text-white">
                 <h3 className="text-sm font-redhat-medium">Gemak en eigen werkplaats</h3>
-                <p className="text-xs opacity-75 font-redhat-regular">Meer informatie ></p>
+                <p className="text-xs opacity-75 font-redhat-regular">Meer informatie &gt;</p>
               </div>
             </div>
             <div className="relative h-[530px] w-[420px] bg-[#2E4D55]">
@@ -83,7 +83,7 @@ export default function Home() {
               />
               <div className="absolute bottom-0 p-4 text-white">
                 <h3 className="text-sm font-redhat-medium">Advies aan huis</h3>
-                <p className="text-xs opacity-75 font-redhat-regular">Meer informatie ></p>
+                <p className="text-xs opacity-75 font-redhat-regular">Meer informatie &gt;</p>
               </div>
             </div>
             <div className="relative h-[530px] w-[420px] bg-[#2E4D55]">
@@ -95,7 +95,7 @@ export default function Home() {
               />
               <div className="absolute bottom-0 p-4 text-white">
                 <h3 className="text-sm font-redhat-medium">Het inspiratie magazijn</h3>
-                <p className="text-xs opacity-75 font-redhat-regular">Meer informatie ></p>
+                <p className="text-xs opacity-75 font-redhat-regular">Meer informatie &gt;</p>
               </div>
             </div>
           </div>
