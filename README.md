@@ -1,11 +1,11 @@
 # Kastrix - Bijkeukenkasten op Maat
 
-Live website gemaakt door [Jouw Naam/Bedrijf]
+Live website gemaakt door Teun Elshout
 
 ## Over Kastrix
 Kastrix is een specialist in maatwerk bijkeukenkasten, opgericht door Job en Arjan. Met passie voor interieurbouw maken wij hoogwaardige kasten die perfect aansluiten bij de wensen van onze klanten. Onze persoonlijke service, waarbij we aan huis komen voor advies en montage, onderscheidt ons in de markt.
 
-## Kernproducten & Diensten
+## Diensten
 
 ### 🏠 Bijkeukenkasten
 - Maatwerk oplossingen
@@ -17,10 +17,9 @@ Kastrix is een specialist in maatwerk bijkeukenkasten, opgericht door Job en Arj
 - Gratis advies aan huis
 - Eigen werkplaats
 - Vakkundige montage
-- Uitgebreide garantie
+- 5 jaargarantie
 
 ### 🎨 Design
-- Moderne designs
 - Persoonlijke stijl
 - Functioneel
 - Duurzame materialen
@@ -35,7 +34,7 @@ Kastrix is een specialist in maatwerk bijkeukenkasten, opgericht door Job en Arj
 
 ### Vereisten
 - Node.js (v18 of hoger)
-- npm of yarn
+- npm
 - Git
 
 ## Lokale Ontwikkeling
@@ -53,24 +52,18 @@ cd kastrix
 3. Installeer dependencies:
 ```bash
 npm install
-# of
-yarn install
 ```
 
 4. Start de development server:
 ```bash
 npm run dev
-# of
-yarn dev
+
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in je browser
 
 ## Features
-- Responsive design
 - Moderne UI/UX
-- Geoptimaliseerd voor SEO
-- Snelle laadtijden
 - Contactformulier integratie
 - Afspraken planningssysteem
 
