@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,21 +10,21 @@ export default function Home() {
       {/* Navbar */}
       <div className="mx-[160px]">
         <nav className="flex justify-between items-center py-4 bg-white">
-          <Image
-            src="/logo.svg"
-            alt="Kastrix logo"
-            width={120}
-            height={40}
-          />
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              alt="Kastrix logo"
+              width={120}
+              height={40}
+            />
+          </Link>
           <div className="flex items-center gap-[180px]">
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Bijkeukenkasten</a>
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Showroom</a>
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Over ons</a>
-            <button 
-              className="w-[140px] h-[38px] bg-[#A79571] text-white rounded font-redhat-bold"
-            >
+            <Link href="/bijkeukenkasten" className="text-[#2F4858] font-redhat-bold">Bijkeukenkasten</Link>
+            <Link href="/showroom" className="text-[#2F4858] font-redhat-bold">Showroom</Link>
+            <Link href="/overons" className="text-[#2F4858] font-redhat-bold">Over ons</Link>
+            <Link href="/afspraak" className="w-[140px] h-[38px] bg-[#A79571] text-white rounded font-redhat-bold flex items-center justify-center">
               Afspraak maken
-            </button>
+            </Link>
           </div>
         </nav>
       </div>
@@ -46,9 +47,15 @@ export default function Home() {
       <div className="mx-[160px]">
         {/* Action Buttons */}
         <div className="flex justify-center gap-[138px] mt-12">
-          <button className="bg-[#2F4858] text-white px-6 py-3 rounded font-redhat-bold">Bekijk onze collectie</button>
-          <button className="bg-[#2F4858] text-white px-6 py-3 rounded font-redhat-bold">Vraag inspiratie magazine aan</button>
-          <button className="bg-[#C5A572] text-white px-6 py-3 rounded font-redhat-bold">Plan een afspraak</button>
+          <Link href="/bijkeukenkasten" className="bg-[#2F4858] text-white px-6 py-3 rounded font-redhat-bold">
+            Bekijk onze collectie
+          </Link>
+          <Link href="/magazine" className="bg-[#2F4858] text-white px-6 py-3 rounded font-redhat-bold">
+            Vraag inspiratie magazine aan
+          </Link>
+          <Link href="/afspraak" className="bg-[#C5A572] text-white px-6 py-3 rounded font-redhat-bold">
+            Plan een afspraak
+          </Link>
         </div>
 
         {/* Info Cards Section */}
@@ -196,24 +203,24 @@ export default function Home() {
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Pagina's</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Home</li>
-                  <li>Afspraak maken</li>
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/afspraak">Afspraak maken</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Producten</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Bijkeukenkasten</li>
-                  <li>Inloopkasten</li>
+                  <li><Link href="/bijkeukenkasten">Bijkeukenkasten</Link></li>
+                  <li><Link href="/inloopkasten">Inloopkasten</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Over ons</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Over ons</li>
-                  <li>Showroom</li>
+                  <li><Link href="/overons">Over ons</Link></li>
+                  <li><Link href="/showroom">Showroom</Link></li>
                 </ul>
               </div>
 

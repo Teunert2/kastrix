@@ -1,6 +1,33 @@
+'use client';
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function Afspraak() {
+  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const faqData = [
+    {
+      question: "Hoe kan ik de juiste configuratie bespreken tijdens een afspraak?",
+      answer: "Tijdens de afspraak zal onze expert al uw wensen en mogelijkheden doorspreken en u adviseren over de beste oplossingen voor uw ruimte."
+    },
+    {
+      question: "Wat gebeurt er na de afspraak?",
+      answer: "Na de afspraak ontvangt u van ons een gedetailleerde offerte op basis van de besproken wensen. Hierna kunt u in alle rust een beslissing nemen."
+    },
+    {
+      question: "Hoe lang duurt een afspraak gemiddeld?",
+      answer: "Een afspraak duurt gemiddeld 1 tot 1,5 uur. Zo hebben we voldoende tijd om al uw wensen te bespreken en de ruimte op te meten."
+    },
+    {
+      question: "Kan ik de afspraak ook online doen?",
+      answer: "Voor de beste ervaring en het meest accurate advies komen we graag bij u thuis. Dit stelt ons in staat om de ruimte goed op te meten en de mogelijkheden ter plekke te bekijken."
+    }
+  ];
+
   return (
     <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
       {/* Top bar */}
@@ -9,21 +36,21 @@ export default function Afspraak() {
       {/* Navbar */}
       <div className="mx-[257px]">
         <nav className="flex justify-between items-center py-4 bg-white">
-          <Image
-            src="/logo.svg"
-            alt="Kastrix logo"
-            width={120}
-            height={40}
-          />
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              alt="Kastrix logo"
+              width={120}
+              height={40}
+            />
+          </Link>
           <div className="flex items-center gap-[180px]">
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Bijkeukenkasten</a>
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Showroom</a>
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Over ons</a>
-            <button 
-              className="w-[140px] h-[38px] bg-[#A79571] text-white rounded font-redhat-bold"
-            >
+            <Link href="/bijkeukenkasten" className="text-[#2F4858] font-redhat-bold">Bijkeukenkasten</Link>
+            <Link href="/showroom" className="text-[#2F4858] font-redhat-bold">Showroom</Link>
+            <Link href="/overons" className="text-[#2F4858] font-redhat-bold">Over ons</Link>
+            <Link href="/afspraak" className="w-[140px] h-[38px] bg-[#A79571] text-white rounded font-redhat-bold flex items-center justify-center">
               Afspraak maken
-            </button>
+            </Link>
           </div>
         </nav>
       </div>
@@ -63,7 +90,22 @@ export default function Afspraak() {
             <div className="text-[#2E4D55] mb-4">
               Kies uw datum en tijd
             </div>
-            {/* Calendar component would go here */}
+            <DatePicker
+              selected={selectedDate}
+              onChange={(date) => setSelectedDate(date)}
+              inline
+              minDate={new Date()}
+              dateFormat="dd/MM/yyyy"
+              showPopperArrow={false}
+              calendarClassName="custom-datepicker"
+              monthsShown={1}
+              fixedHeight
+            />
+            {selectedDate && (
+              <div className="mt-4 text-[#2E4D55]">
+                Gekozen datum: {selectedDate.toLocaleDateString()}
+              </div>
+            )}
           </div>
 
           {/* Form Section */}
@@ -155,36 +197,22 @@ export default function Afspraak() {
 
         {/* FAQ Section */}
         <div className="mt-16 space-y-4">
-          <div className="border rounded p-4">
-            <button className="flex justify-between items-center w-full text-left text-[#2E4D55] font-redhat-medium">
-              Hoe kan ik de juiste configuratie op een online afspraak?
-              <span>+</span>
-            </button>
-          </div>
-          <div className="border rounded p-4">
-            <button className="flex justify-between items-center w-full text-left text-[#2E4D55] font-redhat-medium">
-              Wat gebeurt er na de afspraak?
-              <span>+</span>
-            </button>
-          </div>
-          <div className="border rounded p-4">
-            <button className="flex justify-between items-center w-full text-left text-[#2E4D55] font-redhat-medium">
-              Wat gebeurt er na de afspraak?
-              <span>+</span>
-            </button>
-          </div>
-          <div className="border rounded p-4">
-            <button className="flex justify-between items-center w-full text-left text-[#2E4D55] font-redhat-medium">
-              Wat gebeurt er na de afspraak?
-              <span>+</span>
-            </button>
-          </div>
-          <div className="border rounded p-4">
-            <button className="flex justify-between items-center w-full text-left text-[#2E4D55] font-redhat-medium">
-              Wat gebeurt er na de afspraak?
-              <span>+</span>
-            </button>
-          </div>
+          {faqData.map((faq, index) => (
+            <div key={index} className="border rounded p-4">
+              <button 
+                className="flex justify-between items-center w-full text-left text-[#2E4D55] font-redhat-medium"
+                onClick={() => setOpenFaq(openFaq === index ? null : index)}
+              >
+                {faq.question}
+                <span>{openFaq === index ? '−' : '+'}</span>
+              </button>
+              {openFaq === index && (
+                <div className="mt-4 text-[#2E4D55] font-redhat-regular">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -193,36 +221,38 @@ export default function Afspraak() {
         <div className="mx-[160px]">
           <div className="flex justify-between">
             <div>
-              <Image
-                src="/logo.svg"
-                alt="Kastrix logo"
-                width={120}
-                height={40}
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.svg"
+                  alt="Kastrix logo"
+                  width={120}
+                  height={40}
+                />
+              </Link>
             </div>
             
             <div className="grid grid-cols-4 gap-20">
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Pagina's</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Home</li>
-                  <li>Afspraak maken</li>
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/afspraak">Afspraak maken</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Producten</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Bijkeukenkasten</li>
-                  <li>Inloopkasten</li>
+                  <li><Link href="/bijkeukenkasten">Bijkeukenkasten</Link></li>
+                  <li><Link href="/inloopkasten">Inloopkasten</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Over ons</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Over ons</li>
-                  <li>Showroom</li>
+                  <li><Link href="/overons">Over ons</Link></li>
+                  <li><Link href="/showroom">Showroom</Link></li>
                 </ul>
               </div>
 

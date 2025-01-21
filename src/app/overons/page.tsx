@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OverOns() {
   return (
@@ -9,21 +10,21 @@ export default function OverOns() {
       {/* Navbar */}
       <div className="mx-[257px]">
         <nav className="flex justify-between items-center py-4 bg-white">
-          <Image
-            src="/logo.svg"
-            alt="Kastrix logo"
-            width={120}
-            height={40}
-          />
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              alt="Kastrix logo"
+              width={120}
+              height={40}
+            />
+          </Link>
           <div className="flex items-center gap-[180px]">
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Bijkeukenkasten</a>
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Showroom</a>
-            <a href="#" className="text-[#2F4858] font-redhat-bold">Over ons</a>
-            <button 
-              className="w-[140px] h-[38px] bg-[#A79571] text-white rounded font-redhat-bold"
-            >
+            <Link href="/bijkeukenkasten" className="text-[#2F4858] font-redhat-bold">Bijkeukenkasten</Link>
+            <Link href="/showroom" className="text-[#2F4858] font-redhat-bold">Showroom</Link>
+            <Link href="/overons" className="text-[#2F4858] font-redhat-bold">Over ons</Link>
+            <Link href="/afspraak" className="w-[140px] h-[38px] bg-[#A79571] text-white rounded font-redhat-bold flex items-center justify-center">
               Afspraak maken
-            </button>
+            </Link>
           </div>
         </nav>
       </div>
@@ -35,9 +36,9 @@ export default function OverOns() {
             "Geboren uit passie voor interieurbouw,<br />
             maken wij bijkeukenkasten op maat."
           </h1>
-          <a href="#" className="text-[#2E4D55] font-redhat-medium hover:text-[#A79571] transition-colors">
+          <Link href="/afspraak" className="text-[#2E4D55] font-redhat-medium hover:text-[#A79571] transition-colors">
             Plan uw afspraak in &gt;
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -74,9 +75,9 @@ export default function OverOns() {
             en ervaar zelf onze service en kwaliteit!
           </p>
           <div className="flex justify-center">
-            <a href="#" className="text-[#2E4D55] font-redhat-medium hover:text-[#A79571] transition-colors">
+            <Link href="/afspraak" className="text-[#2E4D55] font-redhat-medium hover:text-[#A79571] transition-colors">
               Maak een afspraak &gt;
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -107,40 +108,43 @@ export default function OverOns() {
         </div>
       </div>
 
- <footer className="w-full bg-[#F5F5F5] py-12 mt-20">
-        <div className="mx-[160px]">  {/* Container for footer content */}
+      {/* Footer */}
+      <footer className="w-full bg-[#F5F5F5] py-12 mt-20">
+        <div className="mx-[160px]">
           <div className="flex justify-between">
             <div>
-              <Image
-                src="/logo.svg"
-                alt="Kastrix logo"
-                width={120}
-                height={40}
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.svg"
+                  alt="Kastrix logo"
+                  width={120}
+                  height={40}
+                />
+              </Link>
             </div>
             
             <div className="grid grid-cols-4 gap-20">
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Pagina's</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Home</li>
-                  <li>Afspraak maken</li>
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/afspraak">Afspraak maken</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Producten</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Bijkeukenkasten</li>
-                  <li>Inloopkasten</li>
+                  <li><Link href="/bijkeukenkasten">Bijkeukenkasten</Link></li>
+                  <li><Link href="/inloopkasten">Inloopkasten</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-medium text-[#2E4D55] mb-4 font-redhat-medium">Over ons</h3>
                 <ul className="space-y-2 text-[#2E4D55] font-redhat-regular">
-                  <li>Over ons</li>
-                  <li>Showroom</li>
+                  <li><Link href="/overons">Over ons</Link></li>
+                  <li><Link href="/showroom">Showroom</Link></li>
                 </ul>
               </div>
 
