@@ -37,7 +37,7 @@ Kastrix is een specialist in maatwerk bijkeukenkasten, opgericht door Job en Arj
 
 1. Clone de repository:
 ```bash
-git clone https://github.com/[username]/kastrix.git
+git clone https://github.com/Teunert2/kastrix.git
 ```
 
 2. Ga naar de project directory:
