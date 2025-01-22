@@ -19,10 +19,6 @@ Kastrix is een specialist in maatwerk bijkeukenkasten, opgericht door Job en Arj
 - Vakkundige montage
 - 5 jaargarantie
 
-### 🎨 Design
-- Persoonlijke stijl
-- Functioneel
-- Duurzame materialen
 
 ## Technische Specificaties
 
