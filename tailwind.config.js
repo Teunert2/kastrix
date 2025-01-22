@@ -12,7 +12,12 @@ module.exports = {
         'redhat-medium': ['var(--font-redhat-medium)'],
         'redhat-regular': ['var(--font-redhat-regular)'],
       },
+      textShadow: {
+        'lg': '0 2px 4px rgba(0, 0, 0, 0.5)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }; 

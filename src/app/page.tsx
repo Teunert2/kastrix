@@ -45,9 +45,9 @@ export default function Home() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-start p-20">
-          <h1 className="text-white text-4xl font-bold mb-2">Luxe in elk detail</h1>
-          <p className="text-white text-xl">Transformeer je bijkeuken met Kastrix</p>
+        <div className="absolute inset-0 flex flex-col justify-center items-start mt-[-200px] pl-[1000px]">
+          <h1 className="text-white text-6xl font-redhat-bold mb-4 text-shadow-lg">Opbergen in stijl.</h1>
+          <p className="text-white font-redhat-bold text-6xl text-shadow-lg">Samen met Kastrix</p>
         </div>
       </div>
 

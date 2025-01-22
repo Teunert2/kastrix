@@ -50,9 +50,7 @@ export default function OverOns() {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="mx-[257px] py-86 -mt-20">
-        {/* Team Image */}
         <div className="relative h-[650px] w-full mb-12 rounded-lg overflow-hidden z-10 shadow-lg">
           <Image
             src="/images/overons.png"
@@ -63,7 +61,7 @@ export default function OverOns() {
         </div>
 
         {/* About Text */}
-        <div className="mb-16 mx-[350px]">
+        <div className="mb-16 mx-[257px]">
           <p className="text-[#2E4D55] text-lg mb-6 font-redhat-medium">
             Kastrix.nl is opgericht door Job en Arjan. Twee vrienden met een grote passie 
             voor de interieurbouw. Ons doel is om maatwerk bijkeukenkasten voor iedereen 

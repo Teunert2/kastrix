@@ -26,6 +26,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer utilities {
+  .text-shadow-md {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+}
+
 @font-face {
   font-family: "RedHatRegular";
   src: url("/fonts/redhatreg.otf") format("opentype");
@@ -60,7 +66,7 @@ body {
 }
 
 .react-datepicker {
-  font-family: 'Red Hat Display', sans-serif !important;
+  font-family: "Red Hat Display", sans-serif !important;
   border: none !important;
   background-color: transparent !important;
 }
@@ -71,14 +77,14 @@ body {
 }
 
 .react-datepicker__current-month {
-  color: #2E4D55 !important;
+  color: #2e4d55 !important;
   font-weight: 500 !important;
 }
 
 .react-datepicker__day {
-  color: #2E4D55 !important;
-  width: 2.5rem !important;
-  line-height: 2.5rem !important;
+  color: #2e4d55 !important;
+  width: 4.5rem !important;
+  line-height: 4.5rem !important;
   border-radius: 0 !important;
   margin: 0 !important;
 }
@@ -86,25 +92,25 @@ body {
 .react-datepicker__day--selected,
 .react-datepicker__day--in-selecting-range,
 .react-datepicker__day--in-range {
-  background-color: #2E4D55 !important;
+  background-color: #2e4d55 !important;
   color: white !important;
   border-radius: 0 !important;
 }
 
 .react-datepicker__day--keyboard-selected {
-  background-color: #2E4D55 !important;
+  background-color: #2e4d55 !important;
   color: white !important;
   border-radius: 0 !important;
 }
 
 .react-datepicker__day:hover {
-  background-color: #2E4D55 !important;
+  background-color: #2e4d55 !important;
   color: white !important;
   border-radius: 0 !important;
 }
 
 .react-datepicker__day-name {
-  color: #2E4D55 !important;
+  color: #2e4d55 !important;
   width: 2.5rem !important;
   line-height: 2.5rem !important;
   margin: 0 !important;
@@ -116,4 +122,4 @@ body {
 
 .react-datepicker__day--outside-month {
   color: #cccccc !important;
-} 
+}
