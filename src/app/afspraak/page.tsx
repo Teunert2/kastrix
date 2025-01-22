@@ -79,7 +79,7 @@ export default function Afspraak() {
         {/* Featured Image */}
         <div className="relative h-[500px] w-full mb-12 rounded-lg overflow-hidden z-10 shadow-lg">
           <Image
-            src="/images/overons.png"
+            src="/images/overons2.png"
             alt="Kastrix team"
             fill
             className="object-cover"

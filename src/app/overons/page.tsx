@@ -53,7 +53,7 @@ export default function OverOns() {
       <div className="mx-[257px] py-86 -mt-20">
         <div className="relative h-[650px] w-full mb-12 rounded-lg overflow-hidden z-10 shadow-lg">
           <Image
-            src="/images/overons.png"
+            src="/images/overons2.png"
             alt="Kastrix team in werkplaats"
             fill
             className="object-cover"
