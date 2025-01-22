@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
  <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
-      {/* Top bar */}
       <div className="h-[27px] w-full bg-[#F5F5F5] flex justify-end items-center pr-[257px]">
         <Image
           src="/images/trustpilot.png"
@@ -14,9 +13,8 @@ export default function Home() {
         />
       </div>
       
-      {/* Navbar */}
       <div className="mx-[200px]">
-        <nav className="flex justify-between items-center py-4 bg-white">
+      <nav className="flex justify-between items-center py-4 bg-white relative z-10">
           <Link href="/">
             <Image
               src="/images/logo.png"
