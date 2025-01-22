@@ -1,6 +1,6 @@
 # Kastrix - Bijkeukenkasten op Maat
 
-Live website gemaakt door Teun Elshout
+Website gemaakt door Teun Elshout
 
 ## Over Kastrix
 Kastrix is een specialist in maatwerk bijkeukenkasten, opgericht door Job en Arjan. Met passie voor interieurbouw maken wij hoogwaardige kasten die perfect aansluiten bij de wensen van onze klanten. Onze persoonlijke service, waarbij we aan huis komen voor advies en montage, onderscheidt ons in de markt.
