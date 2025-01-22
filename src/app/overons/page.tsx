@@ -27,7 +27,7 @@ export default function OverOns() {
               height={60}
             />
           </Link>
-          <div className="flex items-center gap-[180px]">
+          <div className="flex items-center gap-[100px]">
             <Link href="/bijkeukenkasten" className="text-[#2F4858] font-redhat-bold">Bijkeukenkasten</Link>
             <Link href="/showroom" className="text-[#2F4858] font-redhat-bold">Showroom</Link>
             <Link href="/overons" className="text-[#2F4858] font-redhat-bold">Over ons</Link>
