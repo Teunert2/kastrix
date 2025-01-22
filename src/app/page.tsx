@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+ <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
       {/* Top bar */}
       <div className="h-[27px] w-full bg-[#F5F5F5] flex justify-end items-center pr-[257px]">
         <Image
@@ -13,7 +13,6 @@ export default function Home() {
           height={20}
         />
       </div>
-      
       
       {/* Navbar */}
       <div className="mx-[200px]">
