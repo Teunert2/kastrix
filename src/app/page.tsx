@@ -66,13 +66,12 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Info Cards Section */}
         <section className="py-16 mt-12">
           <h2 className="font-redhat-bold text-2xl mb-8 text-[#C5A572] font-redhat-bold">Maak kennis met Kastrix</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative h-[530px] w-[420px] bg-[#2E4D55]">
               <Image
-                src="/service.jpg"
+                src="/images/kastrixman.png"
                 alt="Gemak en eigen werkplaats"
                 fill
                 className="object-cover"
